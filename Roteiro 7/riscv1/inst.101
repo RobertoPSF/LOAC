@@ -1,0 +1,18 @@
+; campos da instrução tipo I
+;     imm        rs1  funct3  rd    opcode
+0000 0000 0001  00000  000  01100  001 0011 ; addi a2, zero, 1
+0000 0000 0001  00000  000  01001  001 0011 ; addi s1, zero, 1
+0000 0000 0001  01100  000  01010  001 0011 ; addi a0, a2, 1
+0000 0000 0001  01010  000  01011  001 0011 ; addi a1, a0, 1
+
+; campos da instrução tipo R
+; funct7   rs2    rs1  funct3  rd    opcode
+0000 000  01100  01010  000  01010  011 0011 ; add a0, a0, a2
+0000 000  01001  01011  000  01011  011 0011 ; add a1, a1, s1
+
+; campos das instruções tipo SB
+;  imm    rs2    rs1  funct3  imm    opcode
+0000000  01011  01100   000  00000  110 0011 ; beq a2, a1, loop
+1111111  01001  01100   000  10101  110 0011 ; beq a2, s1, loop
+
+
