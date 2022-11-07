@@ -1,2 +1,2 @@
 # LOAC
- Laboratórios da cadeira de Laboratório de Organização e Arquitetura de Computadores
+ Laboratórios da disciplina de Laboratório de Organização e Arquitetura de Computadores
